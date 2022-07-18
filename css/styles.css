@@ -1,0 +1,105 @@
+:root {
+  --primery-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --white-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  
+}
+
+body {
+  background-color: var(--white-color);
+  font-family: Roboto;
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  font-family: Raleway;
+  text-decoration: none;
+  color: var(--accent-text-color);
+}
+
+.logo-part {
+  color: #000000;
+}
+
+.logo-part:hover {
+  color: var(--accent-text-color);
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-text-color);
+}
+.auth-nav .link {
+  color: var(--primery-text-color);
+  text-decoration: none;
+}
+
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Button */
+.button {
+  color: var(--title-text-color)
+  background-color: var(var(--white-color))
+}
+
+.button.primary {
+    color: var(--white-color);
+    background-color: var(--accent-text-color);
+
+}
+.button.secondary {
+    color: var(--title-text-color);
+    background-color: var(--secondary-bg-color)
+}
+.button:hover {
+    color: var(--white-color);
+    background-color:var(--accent-text-color)
+    
+}
+
+/* Footer */
+footer {
+  background-color: #2f303a;
+}
+.logo-footer {
+  color: var(--white-color);
+}
+.logo-footer:hover {
+  color: var(--accent-text-color);
+}
+
+.footer-address .link {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.footer-address .link:hover,
+.footer-address .link:focus {
+  color: var(--accent-text-color);
+}
+.address-list .link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address-list .link:hover,
+.address-list .link:focus {
+  color: var(--accent-text-color);
+}
