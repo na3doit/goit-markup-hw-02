@@ -9,8 +9,6 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  letter-spacing: 0.03em;
 
   color: var(--primery-text-color);
   background-color: var(--white-color);
@@ -20,15 +18,20 @@ body {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .header-logo,
 .header-studio {
   font-family: 'Raleway', sans-serif;
-  text-decoration: none;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 
   color: var(--accent-text-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header-studio {
@@ -45,7 +48,6 @@ body {
 }
 
 .header-list .header-link {
-  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
@@ -63,7 +65,6 @@ body {
   color: var(--accent-text-color);
 }
 .header-contact .contact-link {
-  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -78,6 +79,9 @@ body {
 }
 
 /* Hero */
+.hero {
+  background-color: #2f303a;
+}
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -89,13 +93,15 @@ body {
   color: var(--white-color);
 }
 
-/* Button */
+/* Hero---Button */
 .hero-button {
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
 
   color: var(--white-color);
   background-color: var(--accent-text-color);
@@ -116,14 +122,15 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  letter-spacing: 0.03em;0
 
   color: var(--title-text-color);
 }
 
 .festures-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
+  letter-spacing: 0.03em;
 }
 
 /* Чем мы занимаемся - Work */
@@ -132,54 +139,62 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  letter-spacing: 0.03em;
 
   color: var(--title-text-color);
 }
 
 /* Наша команда -Team */
+.section-team {
+  background-color: var(--secondary-bg-color);
+}
 .team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  letter-spacing: 0.03em;
 
   color: var(--title-text-color);
 }
-
+.team-item {
+  background-color: var(--white-color);
+}
 .team-hedline {
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.18;
+  letter-spacing: 0.03em;
 
   color: var(--title-text-color);
 }
 
 .team-text {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.18;
+  letter-spacing: 0.03em;
 
   color: var(--primery-text-color);
 }
 
 /* Footer */
-
+.footer {
+  background-color: #2f303a;
+}
 .footer-logo {
   font-family: 'Raleway', sans-serif;
-  text-decoration: none;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 
   color: var(--accent-text-color);
 }
 
 .footer-studio {
   font-family: 'Raleway', sans-serif;
-  text-decoration: none;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
 
   color: var(--white-color);
 }
@@ -192,11 +207,13 @@ body {
   color: var(--accent-text-color);
 }
 
-.footer-address .address-location {
+.footer-address,
+.address-location {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71px;
   text-decoration: none;
+  letter-spacing: 0.03em;
 
   color: var(--white-color);
 }
@@ -206,10 +223,9 @@ body {
   color: var(--accent-text-color);
 }
 .address-list .address-link {
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  text-decoration: none;
+  letter-spacing: 0.03em;
 
   color: rgba(255, 255, 255, 0.6);
 }
@@ -220,20 +236,26 @@ body {
 }
 
 /* Portfolio  */
-.portfolio-buttons .button {
-  font-family: 'Roboto', sans-serif;
+.button {
+  font-family: inherit;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
 
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
-
-  cursor: pointer;
+}
+.button.primary {
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
 }
 
 .button:hover,
 .button:focus {
+ 
   color: var(--white-color);
   background-color: var(--accent-text-color);
 }
